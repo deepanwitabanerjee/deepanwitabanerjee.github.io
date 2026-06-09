@@ -126,10 +126,15 @@ a {
   color: #f7f2ff;
 }
 
+.hero picture,
 .hero-image,
 .hero-scrim {
   position: absolute;
   inset: 0;
+}
+
+.hero picture {
+  display: block;
 }
 
 .hero-image {

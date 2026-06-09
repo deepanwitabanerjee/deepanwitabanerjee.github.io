@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deepanwitabanerjee.github.io/sitemap.xml
