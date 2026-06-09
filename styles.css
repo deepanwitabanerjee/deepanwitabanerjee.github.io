@@ -171,9 +171,24 @@ p {
 
 h1 {
   margin: 0;
-  font-size: clamp(3.6rem, 9vw, 8.5rem);
-  line-height: 0.94;
+  max-width: 760px;
+  font-size: clamp(3rem, 7vw, 6.8rem);
+  line-height: 0.98;
   letter-spacing: 0;
+}
+
+.name-line,
+.credential {
+  display: block;
+}
+
+.credential {
+  margin-top: 12px;
+  color: var(--amber);
+  font-size: clamp(1.1rem, 2.4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -328,7 +343,8 @@ h3 {
 }
 
 .tag-list,
-.skill-list {
+.skill-list,
+.detail-list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -392,7 +408,7 @@ h3 {
 
 .mentoring-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -401,7 +417,7 @@ h3 {
 }
 
 .mentoring-grid article {
-  min-height: 230px;
+  min-height: 300px;
 }
 
 .soft-skill-grid article,
@@ -420,6 +436,41 @@ h3 {
 .mentoring-grid p {
   margin: 0;
   color: var(--muted);
+}
+
+.detail-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+.detail-list li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.detail-list li::before {
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--amber);
+  box-shadow: 0 0 16px rgba(125, 240, 230, 0.34);
+  content: "";
+}
+
+.featured-role {
+  border-color: rgba(125, 240, 230, 0.46);
+  background:
+    linear-gradient(145deg, rgba(43, 22, 74, 0.98), rgba(20, 12, 44, 0.92)),
+    radial-gradient(circle at 80% 18%, rgba(125, 240, 230, 0.22), transparent 40%);
+}
+
+.featured-role h3 {
+  color: #ffffff;
 }
 
 .contact {
