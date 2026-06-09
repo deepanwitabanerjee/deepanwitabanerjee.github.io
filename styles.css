@@ -338,7 +338,8 @@ h3 {
 
 .card,
 .project,
-.publication-list article {
+.publication-list article,
+.media-card {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper-strong);
@@ -361,6 +362,7 @@ h3 {
 .card p,
 .project p,
 .publication-list p,
+.media-card p,
 .contact p {
   color: var(--muted);
 }
@@ -423,6 +425,24 @@ h3 {
 .publication-list article {
   min-height: 230px;
   padding: 24px;
+}
+
+.media-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.media-card {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+}
+
+.media-card .text-link {
+  margin-top: auto;
 }
 
 .skills-layout {
@@ -560,6 +580,7 @@ h3 {
 
   .area-grid,
   .mentoring-grid,
+  .media-list,
   .publication-list,
   .soft-skill-grid,
   .skills-layout {
