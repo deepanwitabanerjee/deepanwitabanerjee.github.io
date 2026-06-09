@@ -382,6 +382,29 @@ h3 {
   margin-top: 16px;
 }
 
+.soft-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.soft-skill-grid article {
+  min-height: 210px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  background:
+    linear-gradient(145deg, rgba(35, 18, 59, 0.94), rgba(17, 10, 35, 0.88)),
+    radial-gradient(circle at 84% 18%, rgba(125, 240, 230, 0.12), transparent 38%);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.soft-skill-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .contact {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -429,6 +452,7 @@ h3 {
 
   .area-grid,
   .publication-list,
+  .soft-skill-grid,
   .skills-layout {
     grid-template-columns: 1fr;
   }
