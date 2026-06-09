@@ -102,6 +102,8 @@ a {
 .nav {
   display: flex;
   gap: clamp(14px, 2vw, 30px);
+  flex-wrap: wrap;
+  justify-content: flex-end;
   font-size: 0.94rem;
   font-weight: 700;
 }
@@ -388,8 +390,22 @@ h3 {
   gap: 16px;
 }
 
+.mentoring-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
 .soft-skill-grid article {
   min-height: 210px;
+}
+
+.mentoring-grid article {
+  min-height: 230px;
+}
+
+.soft-skill-grid article,
+.mentoring-grid article {
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 24px;
@@ -400,7 +416,8 @@ h3 {
   backdrop-filter: blur(18px);
 }
 
-.soft-skill-grid p {
+.soft-skill-grid p,
+.mentoring-grid p {
   margin: 0;
   color: var(--muted);
 }
@@ -451,6 +468,7 @@ h3 {
   }
 
   .area-grid,
+  .mentoring-grid,
   .publication-list,
   .soft-skill-grid,
   .skills-layout {
