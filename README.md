@@ -1,6 +1,8 @@
 # Research Portfolio Website
 
-A lightweight static portfolio for showcasing research work, publications, technical skills, and collaboration details.
+A lightweight static portfolio for showcasing my research work, publications, technical skills, and collaboration details.
+
+Made using openAI Codex Ver 26.513.20950 (2816)
 
 ## Files
 
