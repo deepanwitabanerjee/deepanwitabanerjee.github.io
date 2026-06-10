@@ -427,6 +427,18 @@ h3 {
   padding: 24px;
 }
 
+.publication-list h3 a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(125, 240, 230, 0.42);
+  text-underline-offset: 4px;
+}
+
+.publication-list h3 a:hover {
+  color: var(--amber);
+  text-decoration-color: var(--amber);
+}
+
 .media-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
