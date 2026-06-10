@@ -339,7 +339,8 @@ h3 {
 .card,
 .project,
 .publication-list article,
-.media-card {
+.media-card,
+.service-card {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper-strong);
@@ -363,6 +364,7 @@ h3 {
 .project p,
 .publication-list p,
 .media-card p,
+.service-card p,
 .contact p {
   color: var(--muted);
 }
@@ -455,6 +457,17 @@ h3 {
 
 .media-card .text-link {
   margin-top: auto;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.service-card {
+  min-height: 230px;
+  padding: 24px;
 }
 
 .skills-layout {
@@ -594,6 +607,7 @@ h3 {
   .mentoring-grid,
   .media-list,
   .publication-list,
+  .service-grid,
   .soft-skill-grid,
   .skills-layout {
     grid-template-columns: 1fr;
