@@ -826,3 +826,112 @@ h3 {
     width: min(100% - 40px, var(--max));
   }
 }
+
+/* Method network and social icon refinements */
+.linkedin-icon {
+  border-color: rgba(86, 180, 233, 0.82);
+  color: #071a2d;
+  background: #8fd3ff;
+  box-shadow: 0 0 0 3px rgba(86, 180, 233, 0.18), 0 12px 26px rgba(86, 180, 233, 0.22);
+}
+
+.linkedin-icon:hover {
+  border-color: var(--amber);
+  background: #f0c95a;
+}
+
+.method-network {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(190px, 0.74fr) repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 30px);
+  align-items: start;
+}
+
+.method-network::before {
+  position: absolute;
+  top: 38px;
+  left: 16%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(86, 180, 233, 0.68), rgba(240, 201, 90, 0.48));
+  content: "";
+}
+
+.method-hub,
+.method-cluster {
+  position: relative;
+  z-index: 1;
+}
+
+.method-hub {
+  display: grid;
+  min-height: 78px;
+  place-items: center;
+  border: 1px solid rgba(240, 201, 90, 0.52);
+  border-radius: 999px;
+  padding: 16px;
+  color: #070b18;
+  background: linear-gradient(135deg, #f0c95a, #8fd3ff);
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
+  box-shadow: 0 0 0 6px rgba(240, 201, 90, 0.08);
+}
+
+.method-cluster {
+  border-left: 1px solid rgba(144, 202, 249, 0.34);
+  padding-left: 24px;
+}
+
+.method-cluster::before {
+  position: absolute;
+  top: 32px;
+  left: -6px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--paper);
+  border-radius: 50%;
+  background: var(--teal);
+  box-shadow: 0 0 0 5px rgba(86, 180, 233, 0.12);
+  content: "";
+}
+
+.method-cluster:nth-child(odd)::before {
+  background: var(--amber);
+  box-shadow: 0 0 0 5px rgba(240, 201, 90, 0.12);
+}
+
+.method-cluster h3 {
+  margin-bottom: 12px;
+}
+
+.method-cluster .skill-list {
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 900px) {
+  .method-network {
+    grid-template-columns: 1fr;
+  }
+
+  .method-network::before {
+    top: 74px;
+    bottom: 0;
+    left: 18px;
+    right: auto;
+    width: 1px;
+    height: auto;
+    background: linear-gradient(180deg, rgba(86, 180, 233, 0.68), rgba(240, 201, 90, 0.48));
+  }
+
+  .method-hub {
+    justify-self: start;
+    min-height: auto;
+    max-width: 280px;
+  }
+
+  .method-cluster {
+    margin-left: 18px;
+  }
+}
