@@ -252,6 +252,18 @@ h3 {
   backdrop-filter: blur(12px);
 }
 
+
+.icon-button {
+  width: 46px;
+  padding: 0;
+}
+
+.icon-button svg {
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
+}
+
 .section {
   width: min(var(--max), calc(100% - 40px));
   margin: 0 auto;
