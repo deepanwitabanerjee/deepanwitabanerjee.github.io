@@ -9,7 +9,7 @@ Made using openAI Codex Ver 26.513.20950 (2816)
 - `index.html`: Page content and structure.
 - `styles.css`: Responsive visual design.
 - `assets/metabolic-network-hero.png`: Generated hero image used on the first screen.
-- `deepanwita-banerjee-cv.pdf`: Full CV linked from the site.
+- `deepanwita-banerjee-CV.pdf`: Full CV linked from the site.
 - `deepanwita-banerjee-resume.pdf`: Resume linked from the contact area.
 
 ## License
